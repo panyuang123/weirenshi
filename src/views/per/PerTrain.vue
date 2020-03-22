@@ -74,6 +74,7 @@
                width="80%">
       <div>
         <el-form :model="train"
+                 :rules="rules"
                  ref="trainForm">
           <el-row :gutter="20">
             <el-col :span="6">
@@ -101,7 +102,7 @@
                                 size="mini"
                                 type="date"
                                 value-format="yyyy-MM-dd"
-                                placeholder="请输入开始时间">
+                                placeholder="请选择开始时间">
                 </el-date-picker>
               </el-form-item>
             </el-col>
@@ -112,7 +113,7 @@
                                 size="mini"
                                 type="date"
                                 value-format="yyyy-MM-dd"
-                                placeholder="请输入结束时间">
+                                placeholder="请选择结束时间">
                 </el-date-picker>
               </el-form-item>
             </el-col>
@@ -176,6 +177,15 @@ export default {
         purpose: '',
         members: '',
         info: ''
+      },
+      rules: {
+        title: [{ required: true, message: '请输入培训名称', trigger: 'blur' }],
+        teacher: [{ required: true, message: '请输入培训讲师', trigger: 'blur' }],
+        start_at: [{ required: true, message: '请输入开始时间', trigger: 'blur' }],
+        end_at: [{ required: true, message: '请输入结束时间', trigger: 'blur' }],
+        purpose: [{ required: true, message: '请输入培训目标', trigger: 'blur' }],
+        members: [{ required: true, message: '请输入参训人员', trigger: 'blur' }],
+        info: [{ required: true, message: '请输入培训详情', trigger: 'blur' }]
       },
       loading: false,
       dialogVisible: false,
