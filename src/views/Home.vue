@@ -38,7 +38,6 @@
                  router>
           <el-submenu :index="index+''"
                       v-for="(item,index) in routes"
-                      v-if="!item.hidden"
                       :key="index">
             <template slot="title">
               <i style="color: #409eff;margin-right: 5px"
