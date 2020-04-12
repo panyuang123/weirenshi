@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import ElementUI from 'element-ui';
+import echarts from 'echarts'
 import 'element-ui/lib/theme-chalk/index.css';
 
 import './assets/css/global.css'
@@ -33,6 +34,7 @@ Vue.prototype.postKeyValueRequest = postKeyValueRequest;
 Vue.prototype.putRequest = putRequest;
 Vue.prototype.deleteRequest = deleteRequest;
 Vue.prototype.getRequest = getRequest;
+Vue.prototype.$echarts = echarts
 
 Vue.config.productionTip = false
 

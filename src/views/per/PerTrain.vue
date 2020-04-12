@@ -24,7 +24,7 @@
         <el-table-column type="selection"
                          width="55">
         </el-table-column>
-        <el-table-column prop="title"
+        <el-table-column prop=""
                          fixed
                          label="培训名称">
         </el-table-column>

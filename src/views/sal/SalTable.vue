@@ -377,8 +377,7 @@ export default {
       title: '',
       month: '',
       keyword: '',
-      popVisible: false,
-      popVisible2: false
+      popVisible: false
     }
   },
   methods: {
@@ -414,6 +413,7 @@ export default {
       this.getRequest('/employee/basic/positions').then(resp => {
         if (resp) {
           this.positions = resp;
+          console.log(this.positions)
         }
       })
     },
@@ -436,14 +436,11 @@ export default {
       this.dialogVisible = true;
     },
     showEditSalView (data) {
-      this.initSals();
       this.initPositions();
       this.title = '编辑工资表信息';
       this.sal = data;
       this.inputDepName = data.department;
       this.dialogVisible = true;
-      console.log(this.sal.position)
-      console.log(this.sal.position_id)
     },
     emptySal () {
       this.sal = {
@@ -525,6 +522,7 @@ export default {
     // this.getNowTime()
     this.initSals()
     this.initData()
+
   }
 }
 </script>
