@@ -14,6 +14,10 @@ proxyObj['/'] = {
   }
 }
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
+  outputDir: "dist",
+  assetsDir: "static",
+  indexPath: 'index.html',
   devServer: {
     host: 'localhost',
     port: 8080,
