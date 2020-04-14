@@ -4,13 +4,13 @@ proxyObj['/ws'] = {
   // target: "ws://localhost:8081"
   target: "http://47.110.235.163:8081"
 };
-proxyObj['/'] = {
+proxyObj['/api'] = {
   ws: false,
   // target: 'http://localhost:8081',
   target: 'http://47.110.235.163:8081',
   changeOrigin: true,
   pathRewrite: {
-    '^/': ''
+    '^/api': ''
   }
 }
 module.exports = {
