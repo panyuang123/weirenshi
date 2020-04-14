@@ -31,7 +31,7 @@
                      :on-error="onError"
                      :disabled="importDataDisabled"
                      style="display: inline-flex;margin-right: 8px"
-                     action="/employee/basic/import">
+                     action="/api/employee/basic/import">
             <el-button :disabled="importDataDisabled"
                        type="success"
                        :icon="importDataBtnIcon">

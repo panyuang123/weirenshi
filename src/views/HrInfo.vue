@@ -10,7 +10,7 @@
                             :show-file-list="false"
                             :on-success="onSuccess"
                             :data="hr"
-                            action="/hr/userface">
+                            action="/api/hr/userface">
                         <img title="点击修改用户图像" :src="hr.userface" style="width: 100px;height: 100px;border-radius: 50px"
                              alt="">
                     </el-upload>
