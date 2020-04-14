@@ -24,7 +24,7 @@
         <el-table-column type="selection"
                          width="55">
         </el-table-column>
-        <el-table-column prop=""
+        <el-table-column prop="title"
                          fixed
                          label="培训名称">
         </el-table-column>
@@ -38,12 +38,15 @@
                          label="结束时间">
         </el-table-column>
         <el-table-column prop="purpose"
+                         show-overflow-tooltip
                          label="培训目标">
         </el-table-column>
         <el-table-column prop="members"
+                         show-overflow-tooltip
                          label="参训人员">
         </el-table-column>
         <el-table-column prop="info"
+                         show-overflow-tooltip
                          label="培训详情">
         </el-table-column>
         <el-table-column label="操作"
@@ -286,5 +289,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.el-tooltip__popper {
+  max-width: 50%;
+}
 </style>
