@@ -764,7 +764,7 @@ export default {
       this.importDataDisabled = true;
     },
     exportData () {
-      window.open('/employee/basic/export', '_parent');
+      window.open('/api/employee/basic/export', '_parent');
     },
     emptyEmp () {
       this.emp = {
