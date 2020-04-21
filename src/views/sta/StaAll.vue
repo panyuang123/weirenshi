@@ -78,7 +78,7 @@ export default {
           scale: true
         },
         series: [{
-          name: '销量',
+          name: '人数',
           type: 'line',
           barWidth: 20,
           data: this.empNum.num
