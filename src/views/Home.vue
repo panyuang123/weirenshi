@@ -6,8 +6,7 @@
         <el-button icon="el-icon-bell"
                    type="text"
                    style="margin-right: 8px;color: #000000;"
-                   size="normal"
-                   @click="goChat"></el-button>
+                   size="normal"></el-button>
         <el-dropdown class="userInfo"
                      @command="commandHandler">
           <span class="el-dropdown-link">
@@ -86,9 +85,6 @@ export default {
     }
   },
   methods: {
-    goChat () {
-      this.$router.push("/chat");
-    },
     commandHandler (cmd) {
       if (cmd == 'logout') {
         this.$confirm('此操作将注销登录, 是否继续?', '提示', {
